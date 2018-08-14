@@ -210,6 +210,7 @@ int main(int argc, char **argv)
 	printf("Starting check/repair pass.\n");
     while (read_fat(&fs), scan_root(&fs))
 	qfree(&mem_queue);
+    check_label(&fs);
     if (test)
 	fix_bad(&fs);
     if (salvage_files)
@@ -224,6 +225,7 @@ int main(int argc, char **argv)
 	printf("Starting verification pass.\n");
 	read_fat(&fs);
 	scan_root(&fs);
+	check_label(&fs);
 	reclaim_free(&fs);
 	qfree(&mem_queue);
     }

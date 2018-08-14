@@ -83,6 +83,12 @@ filesystem check is restarted after truncation.
 File's cluster chain is shorter than indicated by the size fields.
 The file is truncated.
 .IP "*" 4
+Volume label in root directory or label in boot sector is invalid.
+Invalid labels are removed.
+.IP "*" 4
+Volume label in root directory and label in boot sector are different.
+Volume label from root directory is copied to boot sector.
+.IP "*" 4
 Clusters are marked as used but are not owned by a file.
 They are marked as free.
 .PP
