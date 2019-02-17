@@ -7,6 +7,7 @@ endif
 TESTS = referenceFAT12.mkfs              \
 	referenceFAT16.mkfs              \
 	referenceFAT32.mkfs              \
+	mkfs-fat32_2_res_sects.mkfs      \
 	check-bad_names.fsck             \
 	check-chain_to_free_cluster.fsck \
 	check-chain_too_long.fsck        \
@@ -50,6 +51,8 @@ dist_check_DATA = test-mkfs test-fsck test-label   \
 		  referenceFAT16.xxd               \
 		  referenceFAT32.mkfs              \
 		  referenceFAT32.xxd               \
+		  mkfs-fat32_2_res_sects.mkfs      \
+		  mkfs-fat32_2_res_sects.xxd       \
 		  check-bad_names.fsck             \
 		  check-chain_to_free_cluster.fsck \
 		  check-chain_too_long.fsck        \
