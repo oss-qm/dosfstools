@@ -2,7 +2,7 @@ Source: dosfstools
 Section: otherosfs
 Priority: optional
 Maintainer: Andreas Bombe <aeb@debian.org>
-Build-Depends: debhelper (>= 11), pkg-config, libudev-dev [linux-any], xxd
+Build-Depends: debhelper (>= 10), pkg-config, libudev-dev [linux-any], xxd
 Standards-Version: 4.1.4
 Homepage: https://github.com/dosfstools/dosfstools
 Vcs-Browser: https://salsa.debian.org/debian/dosfstools
